@@ -7,7 +7,9 @@ var hostname = os.hostname();
 const host = hostname
 const app = express();
 const port =  process.env.PORT || 3000;
+const dotenv = require("dotenv");
 
+dotenv.config();
 
 
 //const orderItemsRoutes = require('./routes/orderItems');
